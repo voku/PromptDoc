@@ -54,7 +54,7 @@ const PromptPreview: React.FC<PromptPreviewProps> = ({ promptText }) => {
         />
       </div>
       <div className="px-4 py-2 bg-gray-50 border-t border-gray-200 text-xs text-gray-400">
-        {promptText.length} characters &middot; Ready for Gemini / LLM
+        {promptText.length} characters &middot; Ready for AI Assistant
       </div>
     </div>
   );

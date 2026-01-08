@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, FileText, Layers, Layout, CheckSquare, Square } from 'lucide-react';
+import { BookOpen, FileText, Layers, Layout, CheckSquare, Square, Github, Sparkles } from 'lucide-react';
 import { AppState, DocMode } from '../types';
 import { DOMAIN_SECTIONS, README_SECTIONS } from '../constants';
 
@@ -99,8 +99,31 @@ const Sidebar: React.FC<SidebarProps> = ({ state, updateState }) => {
         </div>
       </div>
       
-      <div className="p-4 border-t border-gray-100 bg-gray-50 text-xs text-gray-500 text-center">
-        v1.0.0 &middot; Prompt Engine Ready
+      <div className="p-4 border-t border-gray-100 bg-gray-50 space-y-2">
+        <div className="flex items-center justify-center gap-4 text-xs">
+          <a 
+            href="https://github.com/voku/PromptDoc" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-gray-600 hover:text-brand-600 transition-colors"
+          >
+            <Github className="w-3.5 h-3.5" />
+            <span>Contribute</span>
+          </a>
+          <span className="text-gray-300">|</span>
+          <a 
+            href="https://voku.github.io/PromptMastery/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-gray-600 hover:text-brand-600 transition-colors"
+          >
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>Prompt Techniques</span>
+          </a>
+        </div>
+        <div className="text-xs text-gray-500 text-center">
+          v1.0.0 &middot; Prompt Engine Ready
+        </div>
       </div>
     </aside>
   );
