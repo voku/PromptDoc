@@ -36,7 +36,7 @@ const App: React.FC = () => {
              <p className="text-sm text-gray-500">Configure your context to generate the perfect prompt.</p>
           </div>
 
-          <div className="flex bg-gray-100 p-1 rounded-lg">
+          <div className="flex bg-gray-100 p-1 rounded-lg lg:hidden">
              <button 
                 onClick={() => setActiveTab('input')}
                 className={`px-4 py-1.5 text-sm font-medium rounded-md transition-all ${
